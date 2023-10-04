@@ -11,31 +11,52 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar" style="position: fixed; top: 0; background-color: white; width: 100%;">
+    <header>
+    <nav class="navbar">
       
         <div class="logo">
           <img src="assets/nav-mainlogo.svg">
         </div>
-        <ul class="nav-items">
+        <ul class="nav-items hide-on-mobile">
           <li><a href="#">Courses</a> <img src="assets/nav-downarrow.svg"></li>
           <li><a href="#">Accio Reviews</a></li>
           <li><a href="#">Scholarship Test</a></li>
           <li><a href="#">More</a> <img src="assets/nav-downarrow.svg"></li>
       </ul>
-      <button class="btn btn-outline-primary px-3 mx-0 fw-bold">Login</button>
+      <button class=" hide-on-mobile btn btn-outline-primary px-3 mx-0 fw-bold">Login</button>
+      </div>
+      <div class="menu-button">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 512 512"
+          height="100%"
+          width="40px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="none"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="48"
+            d="M88 152h336M88 256h336M88 360h336"
+          ></path>
+        </svg>
       </div>
       <br><br>
+      </nav>
       <div class="announcent">
         Next batch starts in ⌛ 22 Days, Hurry! 
       </div>
-      </nav>
+    </header>
       
       <!-- <main> -->
         <section class="hero-left-right-main">
         <div class="hero-left-main">
             <div class="hero-main-sec1">
                 <h1>Launch your career with our<br>
-                    <span style="color:blue">Full Stack Developer</span>
+                    <span style="color:blue;">Full Stack Developer</span>
                     <span style="color:black"> Courses</span>
                     </h1>
                     <p>Curriculum designed and taught by Alumni from IIT’s & <br>Leading Tech Companies.</p>
@@ -71,7 +92,7 @@
             </div>
             </div> 
             <br><br>
-                <div class="box">Made with 💙 by an Accio Student</div>  
+                <div class="box hide-on-mobile">Made with 💙 by an Accio Student</div>  
             
             </div> 
                    
@@ -95,9 +116,10 @@
                            placeholder="Phone number">
             </div>
             <br>
-            <div style="text-align: center;" >
-            <button id="hero-btn">Apply Now For Free<img src="assets/btn-icon-1.svg"></button>
-            </div>
+            <button type="submit" class="form-button my-2" fdprocessedid="xe36gd">
+                Apply Now For Free
+                <img src="assets/btn-icon-1.svg" alt="right-arrow">
+              </button>
             </div>
             <div style="text-align: center; padding-top: 2%;">
                 <p>By clicking &nbsp;  ‘Apply now’, &nbsp; you agree to our<br> 
@@ -109,7 +131,7 @@
       <!-- </main> -->
       <section class="course-sec mt-5 py-5">
         <div style="text-align: center; margin-top:2%;">
-            <h5 style="color: #992FED;">LEARN FULL STACK WEB DEVELOPMENT</h5>
+            <h5 style="color: #992FED;"><i>LEARN FULL STACK WEB DEVELOPMENT</i></h5>
             <h2 style="color:blue">OUR COURSES</h>
         </div>
         <div class="beginner-intermidiate-cards">
@@ -238,9 +260,12 @@
                </marquee>
             </div>
         </div>
-        
-        <div style="text-align: center;" >
-            <button id="course-btn">Placement Report<img src="assets/btn-icon-1.svg"></button>
+
+            <div style="text-align: center;" >
+            <button type="button" class="report-btn btn btn-primary" fdprocessedid="q692r7">
+                Placement Report
+                <img src="assets/btn-icon-1.svg" alt="arrow right">
+              </button>
             </div>
     </section>
     <hr>
